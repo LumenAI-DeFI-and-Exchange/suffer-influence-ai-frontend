@@ -1,0 +1,51 @@
+{
+    "bakery": [
+            {
+                "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
+"alias": "@dobrovolskyi_hchef",
+                "fullName": "",
+                "link": "https://www.instagram.com/dobrovolskyi_hchef/"
+            },
+            {
+                "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
+"alias": "@yummy.lera",
+                "fullName": "",
+                "link": "https://www.instagram.com/yummy.lera/"
+            },
+            {
+                "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
+"alias": "@pava_vb",
+                "fullName": "",
+                "link": "https://www.instagram.com/pava_vb/"
+            }
+        ],
+    "cosmetics": [{
+"alias": "@not.found.yet",
+                "fullName": "",
+                "link": "https://www.instagram.com/not_found"
+    }],
+    "clothes": [{
+"alias": "@not.found.yet",
+                "fullName": "",
+                "link": "https://www.instagram.com/not_found"
+    }],
+    "tattoo": [{
+        "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
+                "alias": "@rit.kit.tattoo",
+                "fullName": "",
+                "link": "https://www.instagram.com/rit.kit.tattoo"
+            },
+            {
+                "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
+                "alias": "@zelenskaya.tattoo",
+                "fullName": "",
+                "link": "https://www.instagram.com/zelenskaya.tattoo"
+            },
+            {
+                "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
+                "alias": "@one_wing_tattoo",
+                "fullName": "",
+                "link": "https://www.instagram.com/one_wing_tattoo/"
+            }
+    ]
+}

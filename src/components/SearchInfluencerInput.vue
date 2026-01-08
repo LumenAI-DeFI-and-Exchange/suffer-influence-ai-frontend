@@ -49,7 +49,8 @@
 
     const handleSearch = (e) => {
         if (!e.keyCode || (e.keyCode === 13 && !!brandProposal.value)) {
-            props.onSearch(brandProposal.value)  
+            props.onSearch(brandProposal.value)
+            brandProposal.value = "" 
         }
     }
 

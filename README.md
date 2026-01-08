@@ -36,3 +36,7 @@ yarn dev
 ```sh
 yarn build
 ```
+
+### Design Libs
+- https://heroicons.com/
+- https://tailwindcss.com/

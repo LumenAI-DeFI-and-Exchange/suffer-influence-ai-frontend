@@ -2,39 +2,22 @@
     import InfluencersSearchResults from './InfluencersSearchResults.vue';
     import SearchInfluencerInput from './SearchInfluencerInput.vue'
     import { ref } from 'vue'
+    import apiResponses from '../mock-server/api-responses.json'
 
-    const hardcodedInfluencersResponse = [
-        {
-            name: "@mOme",
-            image: "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
-            links: {
-                youtube: "https://www.youtube.com/channel/UCjHBbCH9yddRerP1-0oDogw",
-            },
-        },
-        {
-            name: "@maruv",
-            image: "https://hitfm.ru/b/d/XS_d975tAlQeb9hMMjesWp5sKuUPWAcOdoKmPd7GV5nvNwe0Y21o10ROCTMBoxQZhTpBpL_7WaXQC8Omvy2GX15bEG0PwNABBUM=mliRVhtTrMfozwMDBM_J2g.webp",
-            links: {
-                youtube: "https://www.youtube.com/channel/UCG2hAzA2G40on_viIrPVz9g",
-            },
-        },
-        {
-            name: "@zhu",
-            image: "https://thissongissick.com/wp-content/uploads/2020/07/109715833_270053844298482_7389082941280115656_n.jpg",
-            links: {
-                youtube: "https://www.youtube.com/@ZHU",
-            },
-        }
-    ]
     const isSearchLoading = ref(false)
     const searchResults = ref([])
+    const searchString = ref("")
 
     const handleSearch = async (searchStr) => {
         isSearchLoading.value = true
-
+        searchString.value = searchStr
+    
         setTimeout(() => {
             try {
-                searchResults.value = [...hardcodedInfluencersResponse]
+                searchResults.value = (apiResponses[searchStr] || []).map((item => ({
+                    ...item,
+                    image: " https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
+                })))
             } catch (e) {
                 // error ==>
             } finally {
@@ -44,7 +27,7 @@
     }
 </script>
 <template>
-    <div class="flex flex-col pb-60 animated-background">
+    <div class="flex flex-col animated-background">
         <SearchInfluencerInput :onSearch="handleSearch" />
         <div class="flex flex-row py-20 justify-center items-center primary-background-2" v-if="isSearchLoading">
             <svg aria-hidden="true" class="w-8 h-8 text-red-500 animate-spin fill-brand" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,10 +37,26 @@
             <span class="sr-only">Loading...</span>
         </div>
         <div class="p-5 primary-background-2" v-if="!isSearchLoading && searchResults?.length > 0">
-            <InfluencersSearchResults :results-list="searchResults" />
+            <InfluencersSearchResults :results-list="searchResults" :search-str="searchString" />
         </div>
-        <div class="flex align-center justify-center pt-50">
+        <div class="flex flex-col gap-2 items-center align-center justify-center py-30 mt-30">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rKKxP9jNBGQ?si=DpqrO1LneyK9PQ6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="flex flex-row gap-2 mt-80">
+                <div>
+                    <h2 class="font-semibold text-2xl mb-5">How our AI platform works</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li>1. Create account</li>
+                        <li>2. Select brand category and adjust search influencer params</li>
+                        <li>3. Init influencers search and review results</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-2xl mb-5">What are we working on</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li>1. Chat Bot provides opportunity to close deals with influencers automatically</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </template>
