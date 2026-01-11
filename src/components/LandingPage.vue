@@ -1,8 +1,8 @@
 <script setup>
+    import { ref } from 'vue'
     import InfluencersSearchResults from './InfluencersSearchResults.vue';
     import SearchInfluencerInput from './SearchInfluencerInput.vue'
-    import { ref } from 'vue'
-    import apiResponses from '../mock-server/api-responses.json'
+    import GetInfluencersResponse from '../mock-server/get-influencers-response.json'
 
     const isSearchLoading = ref(false)
     const searchResults = ref([])
@@ -14,7 +14,7 @@
     
         setTimeout(() => {
             try {
-                searchResults.value = (apiResponses[searchStr] || []).map((item => ({
+                searchResults.value = (GetInfluencersResponse[searchStr] || []).map((item => ({
                     ...item,
                     image: " https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
                 })))

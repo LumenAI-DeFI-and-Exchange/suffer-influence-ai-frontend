@@ -31,16 +31,16 @@
     }],
     "tattoo": [{
         "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
-                "alias": "@rit.kit.tattoo",
-                "fullName": "",
-                "link": "https://www.instagram.com/rit.kit.tattoo"
-            },
-            {
-                "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
-                "alias": "@zelenskaya.tattoo",
-                "fullName": "",
-                "link": "https://www.instagram.com/zelenskaya.tattoo"
-            },
+        "alias": "@rit.kit.tattoo",
+        "fullName": "",
+        "link": "https://www.instagram.com/rit.kit.tattoo"
+    },
+    {
+        "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
+        "alias": "@zelenskaya.tattoo",
+        "fullName": "",
+        "link": "https://www.instagram.com/zelenskaya.tattoo"
+    },
             {
                 "image": "https://res.cloudinary.com/shotgun/image/upload/c_limit,w_750/fl_lossy/f_auto/q_auto/production/artworks/artists/artist-85100-music-release-cover-1760711204622.jpg",
                 "alias": "@one_wing_tattoo",

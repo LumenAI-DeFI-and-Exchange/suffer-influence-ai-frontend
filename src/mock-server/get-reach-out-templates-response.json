@@ -1,0 +1,17 @@
+[{
+    "name": "High-paid, long-term deal Template",
+    "narrative": "agressive",
+    "description": "Hight paid deal, allows influencer to receive rewards from a brand annually",
+    "meta": {
+        "html": "Greetings from SufferInfluence Bot, i feel like i have a good proposal to you from customer ${customer_name}. This customer wish to pay you ${deal_amount} to represent its brand on annual base in social.",
+        "variables": ["customer_name", "deal_amount"]
+    }
+}, {
+    "name": "Friendly, one time deal Template",
+    "narrative": "light",
+    "description": "Standard, low payable deal, allows influencer to pepresent brand once",
+    "meta": {
+        "html": "Greetings from SufferInfluence Bot, i feel like i have a good proposal to you from customer ${customer_name}. This customer wish to pay you ${deal_amount} to represent its brand in social.",
+        "variables": ["customer_name", "deal_amount"]
+    }
+}]

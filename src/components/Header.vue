@@ -11,10 +11,8 @@
             <ul class="flex flex-row gap-5 items-center">
                 <li>
                     <a
-                        @click="() => {
-                            console.log('Sign in!')
-                        }"
-                        class="uppercase font-semibold hover:text-gray-600 transition duration-400 ease-in-out"
+                        @click="onPressCreateAccount"
+                        class="uppercase font-semibold hover:text-gray-600 transition duration-400 ease-in-out cursor-pointer"
                     >
                         Create account
                     </a>
@@ -33,3 +31,8 @@
         </nav>
     </header>
 </template>
+<script setup>
+    const onPressCreateAccount = () => {
+        // todo
+    };
+</script>
